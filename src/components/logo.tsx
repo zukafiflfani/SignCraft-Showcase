@@ -8,6 +8,7 @@ export default function Logo({ className }: { className?: string }) {
         src="/image/AD Time1. new logo.svg"
         alt="SignCraft Logo"
         fill
+        unoptimized={true}
         className="object-contain"
       />
     </div>

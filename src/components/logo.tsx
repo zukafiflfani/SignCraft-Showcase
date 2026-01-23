@@ -5,7 +5,7 @@ export default function Logo({ className }: { className?: string }) {
   return (
     <div className={cn('relative', className)}>
       <Image
-        src="/image/AD Time1. new logo.svg"
+        src="/image/AdtimeLogo.svg"
         alt="SignCraft Logo"
         fill
         className="object-contain"

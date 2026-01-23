@@ -4,6 +4,7 @@ import About from "@/components/about";
 import Products from "@/components/products";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import Partners from "@/components/partners";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <About />
         <Products />
+        <Partners />
         <Contact />
       </main>
       <Footer />

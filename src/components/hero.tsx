@@ -1,11 +1,19 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative bg-background py-24 sm:py-32 lg:py-48">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="relative bg-background py-24 sm:py-32 lg:py-48 overflow-hidden">
+      <Image
+        src="/logo.svg"
+        alt="Background Logo"
+        fill
+        className="object-contain opacity-5"
+        unoptimized
+      />
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="font-headline text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-primary">
           Crafting Impressions, Building Brands.
         </h1>

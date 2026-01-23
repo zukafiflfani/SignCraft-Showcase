@@ -10,7 +10,7 @@ export default function Hero() {
         src="/logo.svg"
         alt="Background Logo"
         fill
-        className="object-contain opacity-5"
+        className="object-contain opacity-5 scale-150"
         unoptimized
       />
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">

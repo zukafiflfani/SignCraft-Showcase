@@ -7,10 +7,10 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
           <div className="flex items-center gap-2 mb-4 sm:mb-0">
             <Logo className="h-8 w-8 text-primary-foreground" />
-            <span className="font-headline text-xl font-bold">SignCraft</span>
+            <span className="font-headline text-xl font-bold">Ad Time</span>
           </div>
           <p className="text-sm font-body text-primary-foreground/80">
-            &copy; {new Date().getFullYear()} SignCraft Showcase. All rights reserved.
+            &copy; {new Date().getFullYear()} Ad Time Showcase. All rights reserved.
           </p>
         </div>
       </div>

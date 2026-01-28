@@ -21,10 +21,10 @@ export default function About() {
           </div>
           <div className="space-y-6">
             <h2 className="font-headline text-4xl sm:text-5xl font-bold text-primary">
-              About SignCraft
+              About Ad Time
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed font-body">
-              Founded on the principles of creativity, quality, and unparalleled customer service, SignCraft has been the region's premier partner in visual branding for over a decade. We believe a great sign is more than just a marker; it's an identity, a first impression, and a promise of quality.
+              Founded on the principles of creativity, quality, and unparalleled customer service, Ad Time has been the region's premier partner in visual branding for over a decade. We believe a great sign is more than just a marker; it's an identity, a first impression, and a promise of quality.
             </p>
             <div className="space-y-4">
               <div>

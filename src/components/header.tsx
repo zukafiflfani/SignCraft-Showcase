@@ -17,7 +17,7 @@ export default function Header() {
       <div className="container mx-auto flex h-24 max-w-screen-2xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-4">
           <Logo className="h-16 w-16 text-primary" />
-          <span className="font-headline text-3xl font-bold text-primary">SignCraft</span>
+          <span className="font-headline text-3xl font-bold text-primary">Ad Time</span>
         </Link>
         
         {/* Desktop Navigation */}
@@ -49,7 +49,7 @@ export default function Header() {
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2 mb-4">
                   <Logo className="h-10 w-10 text-primary" />
-                  <span className="font-headline text-xl font-bold text-primary">SignCraft</span>
+                  <span className="font-headline text-xl font-bold text-primary">Ad Time</span>
                 </Link>
                 <nav>
                   <ul className="grid gap-2">

@@ -20,7 +20,7 @@ export function SignOne(props: SVGProps<SVGSVGElement>) {
         className="text-primary-foreground"
         textAnchor="middle"
       >
-        SignCraft
+        Ad Time
       </text>
     </svg>
   );

@@ -27,7 +27,7 @@ export default function Header() {
               <li key={item.name}>
                 <Link
                   href={item.href}
-                  className="font-body text-lg font-semibold text-foreground/70 transition-colors hover:text-foreground"
+                  className="font-body text-lg font-semibold text-foreground/70 transition-all hover:text-foreground hover:scale-110"
                 >
                   {item.name}
                 </Link>
@@ -58,7 +58,7 @@ export default function Header() {
                         <SheetClose asChild>
                           <Link
                             href={item.href}
-                            className="flex w-full items-center py-2 text-lg font-semibold"
+                            className="flex w-full items-center py-2 text-lg font-semibold transition-all hover:scale-105 hover:translate-x-2"
                           >
                             {item.name}
                           </Link>

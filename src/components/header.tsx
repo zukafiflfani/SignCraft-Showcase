@@ -14,20 +14,20 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-20 max-w-screen-2xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2">
-          <Logo className="h-12 w-12 text-primary" />
-          <span className="font-headline text-2xl font-bold text-primary">SignCraft</span>
+      <div className="container mx-auto flex h-24 max-w-screen-2xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <Link href="/" className="flex items-center gap-4">
+          <Logo className="h-16 w-16 text-primary" />
+          <span className="font-headline text-3xl font-bold text-primary">SignCraft</span>
         </Link>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex">
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-10">
             {navItems.map((item) => (
               <li key={item.name}>
                 <Link
                   href={item.href}
-                  className="font-body text-base font-semibold text-foreground/70 transition-colors hover:text-foreground"
+                  className="font-body text-lg font-semibold text-foreground/70 transition-colors hover:text-foreground"
                 >
                   {item.name}
                 </Link>

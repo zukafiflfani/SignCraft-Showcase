@@ -12,7 +12,8 @@ export default function LanguageChanger() {
 
   const toggleLanguage = () => {
     const nextLocale = locale === 'en' ? 'ka' : 'en';
-    router.replace(pathname, { locale: nextLocale });
+    // Adding scroll: false ensures the user stays at their current scroll position
+    router.replace(pathname, { locale: nextLocale, scroll: false });
   };
 
   return (

@@ -1,43 +1,47 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { SignOne } from "@/components/icons/sign-one";
 import { SignTwo } from "@/components/icons/sign-two";
 import { SignThree } from "@/components/icons/sign-three";
 import { SignFour } from "@/components/icons/sign-four";
-
-const products = [
-  {
-    title: "Classic Business Signage",
-    description: "Elegant and timeless designs for storefronts and offices.",
-    icon: <SignOne className="w-full h-auto" />,
-  },
-  {
-    title: "Neon & LED Signs",
-    description: "Bright and eye-catching signs to make your brand pop.",
-    icon: <SignTwo className="w-full h-auto" />,
-  },
-  {
-    title: "Minimalist Decor",
-    description: "Modern and clean signs for a sophisticated look.",
-    icon: <SignThree className="w-full h-auto" />,
-  },
-  {
-    title: "Digital Displays",
-    description: "Dynamic and programmable signs for modern advertising.",
-    icon: <SignFour className="w-full h-auto" />,
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function Products() {
+  const t = useTranslations('Products');
+
+  const products = [
+    {
+      title: t('items.classic.title'),
+      description: t('items.classic.description'),
+      icon: <SignOne className="w-full h-auto" />,
+    },
+    {
+      title: t('items.neon.title'),
+      description: t('items.neon.description'),
+      icon: <SignTwo className="w-full h-auto" />,
+    },
+    {
+      title: t('items.minimalist.title'),
+      description: t('items.minimalist.description'),
+      icon: <SignThree className="w-full h-auto" />,
+    },
+    {
+      title: t('items.digital.title'),
+      description: t('items.digital.description'),
+      icon: <SignFour className="w-full h-auto" />,
+    },
+  ];
+
   return (
     <section id="products" className="py-24 sm:py-32 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl sm:text-5xl font-bold text-primary">
-            Our Creations
+            {t('title')}
           </h2>
           <p className="mt-4 text-lg text-foreground/80 max-w-2xl mx-auto font-body">
-            Explore a selection of our custom-made signs and decorations that have helped businesses shine.
+            {t('description')}
           </p>
         </div>
         <Carousel

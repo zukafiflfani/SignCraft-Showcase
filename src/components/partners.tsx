@@ -1,9 +1,11 @@
+
 import { CompanyLogoOne } from "@/components/icons/company-logo-one";
 import { CompanyLogoTwo } from "@/components/icons/company-logo-two";
 import { CompanyLogoThree } from "@/components/icons/company-logo-three";
 import { CompanyLogoFour } from "@/components/icons/company-logo-four";
 import { CompanyLogoFive } from "@/components/icons/company-logo-five";
 import { CompanyLogoSix } from "@/components/icons/company-logo-six";
+import { useTranslations } from 'next-intl';
 
 const partners = [
   { name: "Innovate Inc.", logo: <CompanyLogoOne className="h-10 w-auto text-foreground/70" /> },
@@ -15,15 +17,17 @@ const partners = [
 ];
 
 export default function Partners() {
+  const t = useTranslations('Partners');
+
   return (
     <section id="partners" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-headline text-4xl sm:text-5xl font-bold text-primary">
-            Our Partners
+            {t('title')}
           </h2>
           <p className="mt-4 text-lg text-foreground/80 max-w-2xl mx-auto font-body">
-            We are proud to collaborate with a diverse range of industry leaders.
+            {t('description')}
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-12 gap-x-8 items-center justify-items-center">

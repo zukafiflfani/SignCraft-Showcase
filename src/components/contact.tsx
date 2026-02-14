@@ -1,36 +1,40 @@
+
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-
-const contactDetails = [
-  {
-    icon: <Phone className="h-8 w-8 text-primary" />,
-    title: 'Phone',
-    value: '(555) 123-4567',
-    href: 'tel:+1-555-123-4567',
-  },
-  {
-    icon: <Mail className="h-8 w-8 text-primary" />,
-    title: 'Email',
-    value: 'contact@signcraft.com',
-    href: 'mailto:contact@signcraft.com',
-  },
-  {
-    icon: <MapPin className="h-8 w-8 text-primary" />,
-    title: 'Address',
-    value: '123 Signage St, Maker City, 12345',
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function Contact() {
+  const t = useTranslations('Contact');
+
+  const contactDetails = [
+    {
+      icon: <Phone className="h-8 w-8 text-primary" />,
+      title: t('phone'),
+      value: '(555) 123-4567',
+      href: 'tel:+1-555-123-4567',
+    },
+    {
+      icon: <Mail className="h-8 w-8 text-primary" />,
+      title: t('email'),
+      value: 'contact@signcraft.com',
+      href: 'mailto:contact@signcraft.com',
+    },
+    {
+      icon: <MapPin className="h-8 w-8 text-primary" />,
+      title: t('address'),
+      value: '123 Signage St, Maker City, 12345',
+    },
+  ];
+
   return (
     <section id="contact" className="py-24 sm:py-32 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl sm:text-5xl font-bold text-primary">
-            Get in Touch
+            {t('title')}
           </h2>
           <p className="mt-4 text-lg text-foreground/80 max-w-2xl mx-auto font-body">
-            Have a project in mind or need a quote? We're here to help you make a statement.
+            {t('description')}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

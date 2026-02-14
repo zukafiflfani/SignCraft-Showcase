@@ -1,3 +1,4 @@
+
 {
   "Header": {
     "about": "About",
@@ -10,5 +11,49 @@
     "description": "We design and create high-quality, impactful signs and decorations that make your business stand out. From concept to installation, we are your partners in visual excellence.",
     "viewWork": "View Our Work",
     "getQuote": "Get a Quote"
+  },
+  "About": {
+    "title": "About Ad Time",
+    "description": "Founded on the principles of creativity, quality, and unparalleled customer service, Ad Time has been the region's premier partner in visual branding for over a decade. We believe a great sign is more than just a marker; it's an identity, a first impression, and a promise of quality.",
+    "mission_title": "Our Mission",
+    "mission_desc": "To empower businesses by crafting visually compelling signs and decorations that capture attention, communicate brand identity, and create lasting impressions.",
+    "values_title": "Our Values",
+    "values_desc": "We are committed to innovation, meticulous craftsmanship, and building strong, collaborative relationships with our clients to bring their vision to life."
+  },
+  "Products": {
+    "title": "Our Creations",
+    "description": "Explore a selection of our custom-made signs and decorations that have helped businesses shine.",
+    "items": {
+      "classic": {
+        "title": "Classic Business Signage",
+        "description": "Elegant and timeless designs for storefronts and offices."
+      },
+      "neon": {
+        "title": "Neon & LED Signs",
+        "description": "Bright and eye-catching signs to make your brand pop."
+      },
+      "minimalist": {
+        "title": "Minimalist Decor",
+        "description": "Modern and clean signs for a sophisticated look."
+      },
+      "digital": {
+        "title": "Digital Displays",
+        "description": "Dynamic and programmable signs for modern advertising."
+      }
+    }
+  },
+  "Partners": {
+    "title": "Our Partners",
+    "description": "We are proud to collaborate with a diverse range of industry leaders."
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "description": "Have a project in mind or need a quote? We're here to help you make a statement.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
+  },
+  "Footer": {
+    "copyright": "All rights reserved."
   }
 }

@@ -1,6 +1,10 @@
+
 import Logo from '@/components/logo';
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+  const t = useTranslations('Footer');
+
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -10,7 +14,7 @@ export default function Footer() {
             <span className="font-headline text-xl font-bold">Ad Time</span>
           </div>
           <p className="text-sm font-body text-primary-foreground/80">
-            &copy; {new Date().getFullYear()} Ad Time Showcase. All rights reserved.
+            &copy; {new Date().getFullYear()} Ad Time. {t('copyright')}
           </p>
         </div>
       </div>

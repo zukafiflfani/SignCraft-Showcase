@@ -3,13 +3,17 @@ import Logo from '@/components/logo';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import LanguageChanger from './language-changer';
+import { useTranslations } from 'next-intl';
 
 export default function Header() {
+  const t = useTranslations('Header');
+  
   const navItems = [
-    { name: 'About', href: '#about' },
-    { name: 'Products', href: '#products' },
-    { name: 'Partners', href: '#partners' },
-    { name: 'Contact', href: '#contact' },
+    { name: t('about'), href: '#about' },
+    { name: t('products'), href: '#products' },
+    { name: t('partners'), href: '#partners' },
+    { name: t('contact'), href: '#contact' },
   ];
 
   return (
@@ -33,11 +37,15 @@ export default function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+              <LanguageChanger />
+            </li>
           </ul>
         </nav>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-4">
+          <LanguageChanger />
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">

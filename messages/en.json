@@ -1,0 +1,14 @@
+{
+  "Header": {
+    "about": "About",
+    "products": "Products",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Crafting Impressions, Building Brands.",
+    "description": "We design and create high-quality, impactful signs and decorations that make your business stand out. From concept to installation, we are your partners in visual excellence.",
+    "viewWork": "View Our Work",
+    "getQuote": "Get a Quote"
+  }
+}

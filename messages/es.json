@@ -1,0 +1,14 @@
+{
+  "Header": {
+    "about": "Nosotros",
+    "products": "Productos",
+    "partners": "Socios",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "title": "Creando Impresiones, Construyendo Marcas.",
+    "description": "Diseñamos y creamos letreros y decoraciones impactantes y de alta calidad que hacen que su negocio destaque. Desde el concepto hasta la instalación, somos sus socios en la excelencia visual.",
+    "viewWork": "Ver Nuestro Trabajo",
+    "getQuote": "Obtener Cotización"
+  }
+}

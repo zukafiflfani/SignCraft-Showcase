@@ -4,6 +4,26 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import '../globals.css';
 import { Toaster } from '@/components/ui/toaster';
+import { Playfair_Display, PT_Sans } from 'next/font/google';
+import { Metadata } from 'next';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+});
+
+const ptSans = PT_Sans({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-pt-sans',
+  display: 'swap',
+});
+
+export const metadata: Metadata = {
+  title: 'Ad Time - Visual Excellence & Custom Signage',
+  description: 'Crafting high-quality, impactful signs and decorations to make your business stand out.',
+};
 
 export default async function LocaleLayout({
   children,
@@ -23,12 +43,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
  
   return (
-    <html lang={locale}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
-      </head>
+    <html lang={locale} className={`${playfair.variable} ${ptSans.variable}`}>
       <body className="font-body antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}

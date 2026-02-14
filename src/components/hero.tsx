@@ -11,10 +11,11 @@ export default function Hero() {
     <section className="relative bg-background py-24 sm:py-32 lg:py-48 overflow-hidden">
       <Image
         src="/logo.svg"
-        alt="Background Logo"
+        alt="Ad Time Background Logo"
         fill
         className="object-contain opacity-5 scale-150"
         unoptimized
+        priority
       />
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="font-headline text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-primary">

@@ -1,19 +1,14 @@
-
-import { CompanyLogoOne } from "@/components/icons/company-logo-one";
-import { CompanyLogoTwo } from "@/components/icons/company-logo-two";
-import { CompanyLogoThree } from "@/components/icons/company-logo-three";
-import { CompanyLogoFour } from "@/components/icons/company-logo-four";
-import { CompanyLogoFive } from "@/components/icons/company-logo-five";
-import { CompanyLogoSix } from "@/components/icons/company-logo-six";
+import Image from "next/image";
 import { useTranslations } from 'next-intl';
 
+// 1. Clean list of partner data
 const partners = [
-  { name: "Innovate Inc.", logo: <CompanyLogoOne className="h-10 w-auto text-foreground/70" /> },
-  { name: "Apex Solutions", logo: <CompanyLogoTwo className="h-10 w-auto text-foreground/70" /> },
-  { name: "Quantum Corp.", logo: <CompanyLogoThree className="h-10 w-auto text-foreground/70" /> },
-  { name: "Stellar Co.", logo: <CompanyLogoFour className="h-10 w-auto text-foreground/70" /> },
-  { name: "Pioneer Ltd.", logo: <CompanyLogoFive className="h-10 w-auto text-foreground/70" /> },
-  { name: "Vertex Group", logo: <CompanyLogoSix className="h-10 w-auto text-foreground/70" /> },
+  { name: "Coca Cola", src: '/companysLogos/Coca-Cola_logo.svg' },
+  // { name: "Google", src: "/images/companysLogos/google.svg" },
+  // { name: "Amazon", src: "/images/companysLogos/amazon.svg" },
+  // { name: "Microsoft", src: "/images/companysLogos/microsoft.svg" },
+  // { name: "Apple", src: "/images/companysLogos/apple.svg" },
+  // { name: "Meta", src: "/images/companysLogos/meta.svg" },
 ];
 
 export default function Partners() {
@@ -30,10 +25,21 @@ export default function Partners() {
             {t('description')}
           </p>
         </div>
+
+        {/* 2. Grid using Next.js Image component */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-12 gap-x-8 items-center justify-items-center">
           {partners.map((partner) => (
-            <div key={partner.name} className="flex justify-center" title={partner.name}>
-              {partner.logo}
+            <div 
+              key={partner.name} 
+              className="flex items-center justify-center w-full max-w-[140px] grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+            >
+              <Image
+                src={partner.src}
+                alt={`${partner.name} logo`}
+                width={160} 
+                height={80}
+                className="max-h-12 w-auto object-contain" 
+              />
             </div>
           ))}
         </div>

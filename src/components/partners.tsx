@@ -29,16 +29,16 @@ export default function Partners() {
         {/* 2. Grid using Next.js Image component */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-12 gap-x-8 items-center justify-items-center">
           {partners.map((partner) => (
-            <div 
-              key={partner.name} 
-              className="flex items-center justify-center w-full max-w-[140px] grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+            <div
+              key={partner.name}
+              className="flex h-16 w-[140px] items-center justify-center grayscale opacity-70 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
             >
               <Image
                 src={partner.src}
                 alt={`${partner.name} logo`}
-                width={160} 
-                height={80}
-                className="max-h-12 w-auto object-contain" 
+                width={140}
+                height={64}
+                className="h-full w-full object-contain"
               />
             </div>
           ))}

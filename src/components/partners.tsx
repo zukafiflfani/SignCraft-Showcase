@@ -5,9 +5,9 @@ import { useTranslations } from 'next-intl';
 const partners = [
   { name: "Coca Cola", src: '/companysLogos/Coca-Cola_logo.svg' },
   { name: "Maxtherm", src: "/companysLogos/Maxtherm.svg" },
-  // { name: "Amazon", src: "/images/companysLogos/amazon.svg" },
-  // { name: "Microsoft", src: "/images/companysLogos/microsoft.svg" },
-  // { name: "Apple", src: "/images/companysLogos/apple.svg" },
+  { name: "universami", src: "/companysLogos/universami.svg" },
+  { name: "Badagon", src: "/companysLogos/Badagon.png" },
+  { name: "Apple", src: "/companysLogos/evexy.svg" },
   // { name: "Meta", src: "/images/companysLogos/meta.svg" },
 ];
 

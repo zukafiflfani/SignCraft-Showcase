@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 // 1. Clean list of partner data
 const partners = [
   { name: "Coca Cola", src: '/companysLogos/Coca-Cola_logo.svg' },
-  // { name: "Google", src: "/images/companysLogos/google.svg" },
+  { name: "Maxtherm", src: "/companysLogos/Maxtherm.svg" },
   // { name: "Amazon", src: "/images/companysLogos/amazon.svg" },
   // { name: "Microsoft", src: "/images/companysLogos/microsoft.svg" },
   // { name: "Apple", src: "/images/companysLogos/apple.svg" },

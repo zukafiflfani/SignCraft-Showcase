@@ -8,7 +8,7 @@ const partners = [
   { name: "universami", src: "/companysLogos/universami.svg" },
   { name: "Badagon", src: "/companysLogos/Badagon.png" },
   { name: "Apple", src: "/companysLogos/evexy.svg" },
-  // { name: "Meta", src: "/images/companysLogos/meta.svg" },
+  { name: "Meta", src: "/companysLogos/jino.png" },
 ];
 
 export default function Partners() {

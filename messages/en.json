@@ -7,7 +7,7 @@
     "contact": "Contact"
   },
   "Hero": {
-    "title": "Crafting Impressions, Building Brands.",
+    "title": "Building Brands.",
     "description": "We design and create high-quality, impactful signs and decorations that make your business stand out. From concept to installation, we are your partners in visual excellence.",
     "viewWork": "View Our Work",
     "getQuote": "Get a Quote"
@@ -25,20 +25,20 @@
     "description": "Explore a selection of our custom-made signs and decorations that have helped businesses shine.",
     "items": {
       "classic": {
-        "title": "Classic Business Signage",
-        "description": "Elegant and timeless designs for storefronts and offices."
+        "title": "Business Signage",
+        "description": "High-Quality Logos and Signage."
       },
       "neon": {
         "title": "Neon & LED Signs",
         "description": "Bright and eye-catching signs to make your brand pop."
       },
       "minimalist": {
-        "title": "Minimalist Decor",
-        "description": "Modern and clean signs for a sophisticated look."
+        "title": "Decorations",
+        "description": "Various decorations to suit your business."
       },
       "digital": {
-        "title": "Digital Displays",
-        "description": "Dynamic and programmable signs for modern advertising."
+        "title": "Stands for Events",
+        "description": "We design and install event stands."
       }
     }
   },

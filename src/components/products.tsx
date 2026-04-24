@@ -10,25 +10,25 @@ export default function Products() {
     {
       title: t('items.classic.title'),
       description: t('items.classic.description'),
-      src: '/images/BHFB5783.JPG',
+      src: '/images/IMG_0372.JPG',
       alt: "alt text for classic clock",
     },
     {
       title: t('items.neon.title'),
       description: t('items.neon.description'),
-      src: '/images/IGWM1362.JPG',
+      src: '/images/NedExampl.jpeg',
       alt: "alt text for neon clock",
     },
     {
       title: t('items.minimalist.title'),
       description: t('items.minimalist.description'),
-      src: '/images/IMG_0238.JPG',
+      src: '/images/BHFB5783.JPG',
       alt: "alt text for minimalist clock",
     },
     {
       title: t('items.digital.title'),
       description: t('items.digital.description'),
-      src: '/images/IMG_0372.JPG',
+      src: '/images/Stands.jpeg',
       alt: "alt text for digital clock",
     },
   ];

@@ -21,6 +21,29 @@
     "values_desc": "We are committed to innovation, meticulous craftsmanship, and building strong, collaborative relationships with our clients to bring their vision to life."
   },
   "Products": {
+    "title": "Our services",
+    "description": "Our services include creating premium quality signs and decorations that help you highlight your brand identity and attract customers.",
+    "items": {
+      "classic": {
+        "title": "Business Signage",
+        "description": "High-Quality Logos and Signage."
+      },
+      "neon": {
+        "title": "Neon & LED Signs",
+        "description": "Bright and eye-catching signs to make your brand pop."
+      },
+      "minimalist": {
+        "title": "Decorations",
+        "description": "Various decorations to suit your business."
+      },
+      "digital": {
+        "title": "Stands for Events",
+        "description": "We design and install event stands."
+      }
+    }
+  },
+
+  "OurWork": {
     "title": "Our Creations",
     "description": "Explore a selection of our custom-made signs and decorations that have helped businesses shine.",
     "items": {
@@ -42,6 +65,7 @@
       }
     }
   },
+
   "Partners": {
     "title": "Our Partners",
     "description": "We are proud to collaborate with a diverse range of industry leaders."

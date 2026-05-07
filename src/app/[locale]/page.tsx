@@ -10,6 +10,11 @@ const About = dynamic(() => import("@/components/about"), {
 const Products = dynamic(() => import("@/components/products"), {
   loading: () => <div className="h-96 w-full animate-pulse bg-muted/20" />,
 });
+
+const OurWork = dynamic(() => import("@/components/our-work"), {
+  loading: () => <div className="h-96 w-full animate-pulse bg-muted/20" />,
+});
+
 const Partners = dynamic(() => import("@/components/partners"), {
   loading: () => <div className="h-48 w-full animate-pulse bg-muted/20" />,
 });
@@ -25,6 +30,9 @@ export default function Home() {
         <Hero />
         <About />
         <Products />
+
+        <OurWork />
+
         <Partners />
         <Contact />
       </main>

@@ -7,6 +7,12 @@ import { Toaster } from '@/components/ui/toaster';
 import { Playfair_Display, PT_Sans } from 'next/font/google';
 import { Metadata } from 'next';
 
+// export const dynamic = 'force-static';
+
+// export function generateStaticParams() {
+//   return routing.locales.map((locale) => ({locale}));
+// }
+
 const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair',

@@ -4,37 +4,50 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
 
-export default function Products() {
-  const t = useTranslations('Products');
+export default function OurWork() {
+  const t = useTranslations('OurWork');
   const images = [
     {
-      title: t('items.classic.title'),
-      description: t('items.classic.description'),
-      src: '/images/IMG_0372.webp',
+
+      src: '/images/CarLed.webp',
       alt: "alt text for classic clock",
     },
     {
-      title: t('items.neon.title'),
-      description: t('items.neon.description'),
-      src: '/images/NedExampl.webp',
-      alt: "alt text for neon clock",
-    },
-    {
-      title: t('items.minimalist.title'),
-      description: t('items.minimalist.description'),
-      src: '/images/BHFB5783.webp',
+
+      src: '/images/Hart.webp',
       alt: "alt text for minimalist clock",
     },
     {
-      title: t('items.digital.title'),
-      description: t('items.digital.description'),
-      src: '/images/Stands.webp',
+
+      src: '/images/Cockakola.webp',
+      alt: "alt text for neon clock",
+    },
+
+    {
+
+      src: '/images/Shawarma.webp',
+      alt: "alt text for digital clock",
+    },
+    {
+      src: '/images/Stand2.webp',
+      alt: "alt text for digital clock",
+    },
+    {
+      src: '/images/jino.webp',
+      alt: "alt text for digital clock",
+    },
+    {
+      src: '/images/bigLogoCocacola.webp',
+      alt: "alt text for digital clock",
+    },
+    {
+      src: '/images/Mtis.webp',
       alt: "alt text for digital clock",
     },
   ];
 
   return (
-    <section id="products" title="caruselImag" className="py-24 sm:py-32 bg-secondary">
+    <section id="our-work" title="caruselImag" className="pb-8 sm:py-8 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl sm:text-5xl font-bold text-primary">
@@ -56,10 +69,6 @@ export default function Products() {
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="h-full flex flex-col overflow-htitleden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <CardHeader>
-                      <CardTitle className="font-headline">{image.title}</CardTitle>
-                      <CardDescription className="font-body">{image.description}</CardDescription>
-                    </CardHeader>
                     <CardContent className="flex-grow p-6 bg-card">
                       <div className="relative w-full h-56 sm:h-64 flex items-center justify-center">
                         <Image src={image.src} alt={image.alt} fill className="object-contain" />

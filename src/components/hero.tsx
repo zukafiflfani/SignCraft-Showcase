@@ -26,7 +26,7 @@ export default function Hero() {
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Button asChild size="lg" className="font-body">
-            <Link href="#products">
+            <Link href="#our-work">
               {t('viewWork')} <ArrowRight className="ml-2" />
             </Link>
           </Button>

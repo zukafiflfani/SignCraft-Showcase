@@ -7,6 +7,19 @@ import { X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
+export {
+  Sheet,
+  SheetPortal,
+  SheetOverlay,
+  SheetTrigger,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetFooter,
+  SheetTitle,
+  SheetDescription,
+}
+
 const Sheet = SheetPrimitive.Root
 
 const SheetTrigger = SheetPrimitive.Trigger
@@ -126,15 +139,3 @@ const SheetDescription = React.forwardRef<
 ))
 SheetDescription.displayName = SheetPrimitive.Description.displayName
 
-export {
-  Sheet,
-  SheetPortal,
-  SheetOverlay,
-  SheetTrigger,
-  SheetClose,
-  SheetContent,
-  SheetHeader,
-  SheetFooter,
-  SheetTitle,
-  SheetDescription,
-}

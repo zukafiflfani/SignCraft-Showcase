@@ -10,19 +10,19 @@ export default function Contact() {
     {
       icon: <Phone className="h-8 w-8 text-primary" />,
       title: t('phone'),
-      value: '(555) 123-4567',
-      href: 'tel:+1-555-123-4567',
+      value: '(+995) 511 19 12 52',
+      href: 'tel:+995-511-19-12-52',
     },
     {
       icon: <Mail className="h-8 w-8 text-primary" />,
       title: t('email'),
-      value: 'contact@signcraft.com',
-      href: 'mailto:contact@signcraft.com',
+      value: 'adtime2026@gmail.com',
+      href: 'mailto:adtime2026@gmail.com',
     },
     {
       icon: <MapPin className="h-8 w-8 text-primary" />,
       title: t('address'),
-      value: '123 Signage St, Maker City, 12345',
+      value: '6 Libani St, Tbilisi 0167, Georgia',
     },
   ];
 

@@ -3,7 +3,10 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { useTranslations } from 'next-intl';
 
-const aboutImage = PlaceHolderImages.find(p => p.id === 'about-us-image');
+// const aboutImage = PlaceHolderImages.find(p => p.id === 'about-us-image');
+ 
+  const srcofimage = '/aboutimage/photo-1635321101901-7ac6eec3d371.webp';
+  const alt= "about image"
 
 export default function About() {
   const t = useTranslations('About');
@@ -13,15 +16,17 @@ export default function About() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative h-96 lg:h-auto lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-            {aboutImage && (
-              <Image
-                src={aboutImage.imageUrl}
-                alt={aboutImage.description}
-                fill
-                className="object-cover"
-                data-ai-hint={aboutImage.imageHint}
-              />
-            )}
+            {
+            // aboutImage && (
+            //   <Image
+            //     src={aboutImage.imageUrl}
+            //     alt={aboutImage.description}
+            //     fill
+            //     className="object-cover"
+            //     data-ai-hint={aboutImage.imageHint}
+            //   />
+            // )
+             <Image src={srcofimage} alt={alt} fill className="object-contain" />}
           </div>
           <div className="space-y-6">
             <h2 className="font-headline text-4xl sm:text-5xl font-bold text-primary">
